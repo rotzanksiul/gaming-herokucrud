@@ -26,7 +26,7 @@ const Create = () => {
             return; // prevent the post request to be made
         }
 
-        Axios.post('https://mysql-gameapp-f5c66260f1c0.herokuapp.com//create',
+        Axios.post('https://mysql-gameapp-f5c66260f1c0.herokuapp.com/create',
             {
                 game: game,
                 genre: genre,

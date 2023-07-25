@@ -93,7 +93,7 @@ const Games = () => {
 
     //DELETE
     const deleteGame = (id) =>{
-        Axios.delete(`https://mysql-gameapp-f5c66260f1c0.herokuapp.com//games/${id}`)
+        Axios.delete(`https://mysql-gameapp-f5c66260f1c0.herokuapp.com/games/${id}`)
         .then(()=>{
             setAllGames((prevAllGames) => prevAllGames.filter((game) => game.id !== id)); //filter the games after deleting the one that matches the id  
         })
